@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/STYLE.CSS">
+</head>
+<body class="bg-dark">
+
+
+    <h1 class="text-center h2 my-5 text-info">CRUD Store</h1>
+
+    <div class="container">
+
+
+        <label class="text-info">Product Name</label>
+        <input id="pNameId" class="form-control mb-4">
+
+        <label class="text-info">Product Price</label>
+        <input id="pPriceId" class="form-control mb-4">
+
+        <label class="text-info">Product Category</label>
+        <input id="pCatId" class="form-control mb-4">
+
+        
+        <label class="text-info">Product Description</label>
+        <textarea id="pDescId" class="form-control mb-4"></textarea>
+
+        <button id="addBtn" onclick="addProduct()" class="btn btn-info text-white">Add Product</button>
+
+        <button id="update" onclick="savechange()"  class="btn btn-info text-white">Save</button>
+
+    </div>
+
+
+    <input onkeyup="SearchProductName(this.value)" class="form-control w-50 mx-auto my-4" placeholder="Search Product Name">
+
+
+
+    <table class="table w-75 m-auto">
+
+        <thead class="text-info bg-dark">
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th class="text-warning">Update Product</th>
+            <th class="text-danger">Delete Product</th>
+            
+        </thead>
+
+        <tbody id="tBody">
+
+            
+        </tbody>
+
+
+    </table>
+ <script src="js/MAIN.JS"></script>
+</body>
+</html>
